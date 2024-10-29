@@ -57,57 +57,71 @@
 
 
     <!-- Hero Section -->
-    <section class="w-90% mx-auto flex flex-col justify-center items-center px-4 py-24">
-        <div class="hero flex justify-between items-center max-w-7xl mx-auto gap-28 px-4">
+    <section class="max-w-auto lg:w-90% mx-auto flex flex-col justify-center items-center px-0 lg:px-4  py-24">
+        <div class="hero flex flex-col lg:flex-row justify-between items-center max-w-auto lg:max-w-7xl mx-auto gap-8 lg:gap-28 px-4">
+            <div class="block w-90% lg:hidden rounded-lg shadow-xl bg-white">
+                <img src="../Figma-05-img/hero-section.png" 
+                class=" object-cover" alt="">
+            </div>
             <div class="hero-left">
-                <p class="text-7xl font-semibold">Hello, I’m <br>
+                <p class="text-6xl lg:text-7xl font-semibold">Hello, I’m <br>
                     Rana Noman
                 </p>
-                <p class="text-lg text-Text-color mt-4">I'm a Freelance UI/UX Designer and Developer based in Bahawalpur,<br>
-                   Pakistan. I strives to build immersive and beautiful web applications <br>
-                   through carefully crafted code and user-centric design.
+                <p class="text-sm lg:text-lg text-Text-color mt-4">I'm a Freelance UI/UX Designer and Developer based <br>in Bahawalpur,
+                   Pakistan.I strives to build immersive and <br>beautiful web applications
+                   through carefully crafted code <br>and user-centric design.
                 </p>
                 <button class="px-4 py-2 text-white bg-primary rounded mt-5">Say Hello!</button>
-                <div class="card flex gap-1 mt-52">
+                <div class="card mx-auto flex flex-col lg:flex-row gap-1 mt-10 lg:mt-52">
                     <div class="px-10 py-3 bg-secendary">
                         <p class="text-3xl text-center">2 Y.</p>
-                        <p class="text-base text-Text-color">Experience</p>
+                        <p class="text-base text-center lg:text-left text-Text-color">Experience</p>
                     </div>
                     <div class="px-12 py-3 bg-secendary">
                         <p class="text-3xl text-center">250+</p>
-                        <p class="text-base text-Text-color">Project Completed</p>
+                        <p class="text-base text-center lg:text-left text-Text-color">Project Completed</p>
                     </div>
                     <div class="px-10 py-3 bg-secendary">
                         <p class="text-3xl text-center">58</p>
-                        <p class="text-base text-Text-color">Happy Client</p>
+                        <p class="text-base text-center lg:text-left text-Text-color">Happy Client</p>
                     </div>
                 </div>
             </div>
-            <div class="w-hero-i-w h-hero-i-h rounded-lg shadow-xl bg-white">
+            <div class="lg:w-hero-i-w lg:h-hero-i-h hidden sm:block rounded-lg shadow-xl bg-white">
                 <img src="../Figma-05-img/hero-section.png" 
-                class="w-hero-i-w h-hero-i-h object-cover" alt="">
+                class="lg:w-hero-i-w lg:h-hero-i-h object-cover" alt="">
             </div>
         </div>
-        <div class="w-90% h-[728px] rounded-lg shadow-lg mt-32 flex justify-center items-center bg-white">
-            <div class="flex justify-between items-center gap-36">
+        <div class="w-90% mx-auto h-[1040px] lg:h-[728px] rounded-lg shadow-lg mt-32 flex justify-center items-center bg-white">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-36">
                 <!-- img -->
-                <div class="w-[424px] h-[504px]">
-                    <img src="../Figma-05-img/hero-section.png" class="w-[424px] h-[468px] object-cover bg-[#F0F1F3]" alt="">
-                    <div class="contact flex">
-                         
+                <div class="w-[424px] h-[504px] relative">
+                    <img src="../Figma-05-img/hero-section.png" class="w-[424px] h-[468px] object-cover rounded-lg bg-[#F0F1F3]" alt="">
+                    <div class="contact w-[264px] h-[74px] absolute left-20 bottom-2 bg-white rounded shadow-lg 
+                       flex justify-center items-center gap-8 text-primary">
+                        <i class="fa-brands fa-facebook hover:px-2 
+                        hover:transition-all hover:py-2 hover:rounded-md hover:bg-primary hover:text-white"></i>
+                        <i class="fa-solid fa-earth-americas hover:px-2
+                        hover:transition-all hover:py-2 hover:rounded-md hover:bg-primary hover:text-white"></i>
+                        <i class="fa-brands fa-instagram
+                        hover:transition-all hover:px-2 hover:py-2 hover:rounded-md hover:bg-primary hover:text-white"></i>
+                        <i class="fa-brands fa-linkedin
+                        hover:transition-all hover:px-2 hover:py-2 hover:rounded-md hover:bg-primary hover:text-white"></i>
+                        <i class="fa-brands fa-behance
+                        hover:transition-all hover:px-2 hover:py-2 hover:rounded-md hover:bg-primary hover:text-white"></i>
                     </div>
                 </div>
                 <!-- Text -->
                 <div>
-                    <p class="text-4xl font-semibold">I am Professional User <br>Experience Designer</p>
-                    <p class="text-base text-Text-color mt-5">I design and develop services for customers specializing <br>
-                        creating stylish, modern websites, web services and online <br>
+                    <p class="text-3xl text-center lg:text-left lg:text-4xl font-semibold">I am Professional User <br>Experience Designer</p>
+                    <p class="text-base text-center lg:text-left text-Text-color mt-5">I design and develop services for customers <br>specializing
+                        creating stylish, modern websites, web <br>services and online
                         stores. My passion is to design digital user experiences.
                     </p>
-                    <p class="text-base text-Text-color mt-4">I design and develop services for customers specializing <br>
+                    <p class="text-base text-center lg:text-left text-Text-color mt-4">I design and develop services for customers <br>specializing
                         creating stylish, modern websites, web services.
                     </p>
-                    <div class="mt-5 flex gap-4">
+                    <div class="mt-5 flex justify-center items-center lg:justify-start lg:items-start gap-4">
                         <p class="px-4 py-2 bg-primary">My Project</p>
                         <p class="px-6 py-2 border-2 border-primary">Download CV</p>
                     </div>
