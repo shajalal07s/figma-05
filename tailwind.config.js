@@ -19,6 +19,7 @@ module.exports = {
         '90%': '90%',
         'hero-i-w': '536px',
         'wor-primary': '312px',
+        'por-30%': '30%'
       },
       height: {
         'primary-h': '58px',
