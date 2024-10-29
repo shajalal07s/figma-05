@@ -8,7 +8,8 @@ module.exports = {
         'secendary': '#EDD8FF80',
         'Text-color': '#556070',
         'foot1-color': '#132238',
-        'footer': '#2B384C'
+        'footer': '#2B384C',
+        'working': '#F0F1F3',
       },
       fontFamily: {
         'work-sans': 'Work Sans'
@@ -16,11 +17,14 @@ module.exports = {
       width: {
         'primary-w': '58px',
         '90%': '90%',
-        'hero-i-w': '536px'
+        'hero-i-w': '536px',
+        'wor-primary': '312px',
       },
       height: {
         'primary-h': '58px',
-        'hero-i-h': '636px'
+        'hero-i-h': '636px',
+        'wor-primary': '988px',
+        'wor-secendry': '276px',
       }
     },
   },
