@@ -20,7 +20,8 @@ module.exports = {
         '90%': '90%',
         'hero-i-w': '536px',
         'wor-primary': '312px',
-        'por-30%': '30%'
+        'por-30%': '30%',
+        'cont-w': '1320px'
       },
       height: {
         'primary-h': '58px',
@@ -29,6 +30,8 @@ module.exports = {
         'wor-secendry': '276px',
         'project': '472px',
         'blog': '350px',
+        'cont-h': '720px',
+        'foot-h': '330px'
       }
     },
   },
