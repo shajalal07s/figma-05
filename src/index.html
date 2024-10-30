@@ -466,11 +466,12 @@
 
     <!-- Contact Us Section -->
     
-    <section class="max-w-full h-[650px] relative mx-auto flex justify-center items-center bg-white-light">
-        <div class="contact-sec flex absolute top-1 justify-evenly items-center w-4/5 h-cont-h rounded-md shadow-md bg-white">
-            <div class="w-2/4 px-20 flex flex-col justify-start items-start">
-                <p class="text-4xl font-semibold">Let’s discuss your Project</p>
-                <p class="text-Text-color mt-3">There are many variations of passages of Lorem Ipsu <br>available. but the majority have suffered alte.</p>
+    <section class="max-w-full lg:h-[650px] py-10 lg:py-0 lg:relative mx-auto flex justify-center items-center bg-white-light">
+        <div class="contact-sec lg:flex-row  lg:absolute lg:top-1 
+            flex flex-col justify-evenly items-center lg:w-4/5 lg:h-cont-h rounded-md shadow-md bg-white">
+            <div class="lg:w-2/4 px-20 py-10 lg:py-0 flex flex-col justify-start items-start">
+                <p class="text-center lg:text-left text-4xl font-semibold">Let’s discuss your Project</p>
+                <p class="text-Text-color mt-4 text-sm lg:text-base text-center lg:text-left">There are many variations of passages of Lorem <br>Ipsu available. but the majority have suffered alte.</p>
                 <div class="flex flex-col mt-4 gap-4">
                     <div class="w-[360px] h-[96px] bg-white rounded-md shadow-md px-6 flex justify-start items-center gap-4">
                         <i class="fa-solid fa-location-dot px-4 py-4 text-lg text-white rounded-sm bg-primary"></i>
@@ -511,20 +512,20 @@
                 </div>
             </div>
 
-            <div class="w-2/4">
-                <p class="text-Text-color">There are many variations of passages of Lorem Ipsu available,<br>
+            <div class="w-2/4 py-10 lg:py-0 mx-auto flex flex-col justify-center items-center lg:justify-start lg:items-start lg:w-2/4">
+                <p class="text-Text-color text-sm lg:text-base  text-center lg:text-left">There are many variations of passages of Lorem Ipsu available,<br>
                     but the majority have suffered alte.
                 </p>
-                <input class="w-[546px] border-b-2 border-primary mt-10 pb-2" type="name" placeholder="Name*">
-                <input class="w-[546px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Gmail*">
-                <input class="w-[546px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Location*">
-                <div class="flex gap-12">
-                    <input class="w-[250px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Budget*">
-                    <input class="w-[250px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Subject*">
+                <input class="w-[350px] lg:w-[546px] border-b-2 border-primary mt-10 pb-2" type="name" placeholder="Name*">
+                <input class="w-[350px] lg:w-[546px]  border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Gmail*">
+                <input class="w-[350px] lg:w-[546px]  border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Location*">
+                <div class="flex flex-col lg:flex-row lg:gap-12">
+                    <input class="w-[350px] lg:w-[250px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Budget*">
+                    <input class="w-[350px] lg:w-[250px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Subject*">
                 </div> 
-                <input class="w-[546px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Massage*">
-                <div class="mt-14">
-                    <button class="px-6 py-2 bg-primary rounded-sm">Submit <i class="fa-solid fa-arrow-right"></i></button>
+                <input class="w-[350px] lg:w-[546px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Massage*">
+                <div class="mt-5 lg:mt-14">
+                    <button class="px-6 py-2 text-white bg-primary rounded-sm">Submit <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -532,8 +533,25 @@
     
     <!-- Footer -->
 
-    <footer class="max-w-full h-foot-h bg-footer">
-
+    <footer class="max-w-full h-foot-h bg-footer flex justify-center items-center">
+        <div class="w-90% flex flex-col lg:flex-row justify-evenly items-center gap-8 lg:gap-12 lg:mt-32">
+            <div class="logo flex justify-center items-center gap-4">
+                <div class="size-14 text-xl text-white bg-primary rounded-full flex justify-center items-center">S</div>
+                <P class="text-3xl text-white">Created By Shajalal.</P>
+            </div>
+            <div>
+                <ul class="flex justify-center items-center gap-5 text-white text-sm">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Process</li>
+                    <li>Portfolio</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <p class="text-white text-sm">Copyright © 2024 Shajalal.</p>
+        </div>
     </footer>
 </body>
 </html>
