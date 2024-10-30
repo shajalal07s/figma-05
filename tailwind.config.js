@@ -26,6 +26,8 @@ module.exports = {
         'hero-i-h': '636px',
         'wor-primary': '988px',
         'wor-secendry': '276px',
+        'project': '472px',
+        'blog': '784px',
       }
     },
   },
