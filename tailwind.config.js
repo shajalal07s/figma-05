@@ -10,6 +10,7 @@ module.exports = {
         'foot1-color': '#132238',
         'footer': '#2B384C',
         'working': '#F0F1F3',
+        'white-light': '#F0F1F3',
       },
       fontFamily: {
         'work-sans': 'Work Sans'
