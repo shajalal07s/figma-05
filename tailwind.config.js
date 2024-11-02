@@ -18,6 +18,7 @@ module.exports = {
       width: {
         'primary-w': '58px',
         '90%': '90%',
+        '95%': '95%',
         'hero-i-w': '536px',
         'wor-primary': '312px',
         'por-30%': '30%',
