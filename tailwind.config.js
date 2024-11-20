@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -21,7 +21,7 @@ module.exports = {
         '95%': '95%',
         'hero-i-w': '536px',
         'wor-primary': '312px',
-        'por-30%': '30%',
+        'width-secendary': '32%',
         'cont-w': '1320px'
       },
       height: {
@@ -35,6 +35,13 @@ module.exports = {
         'foot-h': '330px'
       }
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '40px',
+        md: '50px',
+      }
+    }  
   },
   plugins: [],
 }

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potfolio</title>
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-work-sans">
+<body class="font-work-sans bg-cover bg-center "style="background-image: url(./Figma-05-img/BG-Lighting.jpg)">
     <!-- Header Section -->
-    <header class="lg:w-4/5 md:w-full mx-auto bg-white py-4">
-        <nav class="flex justify-between items-center max-w-7xl mx-auto px-4">
+    <header class="bg-white py-4">
+        <nav class="container flex justify-between items-center">
             <div class="logo flex justify-center items-center gap-3">
                 <div class="w-primary-w h-primary-h rounded-full bg-primary
                 flex justify-center items-center text-2xl text-white">N</div>
             <p class="text-3xl font-semibold">Potfolio</p>
             </div>
-            <ul class="hidden md:flex space-x-6 text-lg">
+            <ul class="hidden lg:flex space-x-6 text-lg">
                 <li><a href="#" class="text-primary  hover:text-black">Home</a></li>
                 <li><a href="#" class="text-black hover:text-primary">About</a></li>
                 <li><a href="#" class="text-black hover:text-primary">Process</a></li>
@@ -25,7 +25,7 @@
                 <li><a href="#" class="text-black hover:text-primary">Services</a></li>
                 <li><a href="#" class="text-white px-5 py-2 bg-primary rounded">Contact</a></li>
             </ul>
-            <div class="md:hidden">
+            <div class="lg:hidden">
                 <button id="menu-btn" class="text-3xl">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -34,7 +34,7 @@
     </header>
 
     <!-- Mobile Menu --> 
-    <div id="mobile-menu" class="hidden md:hidden lg:hidden absolute top-9% left-0 w-full h-[500px]
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-9% left-0 w-full h-[500px] z-50
          bg-primary flex flex-col items-center justify-center space-y-8">
         <a href="#" class="text-white hover:text-black">Home</a>
         <a href="#" class="text-white hover:text-black">About</a>
@@ -56,56 +56,55 @@
 
 
     <!-- Hero Section -->
-    <section class="max-w-auto lg:relative lg:w-4/5 lg:h-[1300px] md:h-[1350px] mt-32 
-        mx-auto flex flex-col justify-start items-center px-0 lg:px-4">
-        <div class="hero flex flex-col lg:flex-row md:flex-row justify-between items-center max-w-auto 
-            md:w-full lg:max-w-7xl mx-auto gap-8 lg:gap-28 px-4">
-            <div class="block w-90% lg:hidden md:hidden rounded-lg shadow-xl bg-white">
-                <img src="../Figma-05-img/hero-section.png" 
+    <section class="container py-20 lg:h-[1230px] relative">
+        <div class="hero flex flex-col lg:flex-row justify-between">
+            <div class="block lg:hidden rounded-lg shadow-xl mb-10 bg-white">
+                <img src="./Figma-05-img/hero-section.png" 
                 class=" object-cover" alt="">
             </div>
 
             <!-- Section-1 -->
 
-            <div class="hero-left md:w-2/4">
-                <p class="text-6xl lg:text-7xl font-semibold">Hello, I’m <br>
+            <div class="hero-left lg:w-2/4 h-full">
+                <p class="text-6xl lg:text-7xl text-center lg:text-left font-semibold">Hello, I’m <br>
                     Rana Noman
                 </p>
-                <p class="text-sm lg:text-lg text-Text-color mt-4">I'm a Freelance UI/UX Designer and Developer based <br>in Bahawalpur,
+                <p class="text-sm text-center lg:text-left lg:text-lg text-Text-color mt-4">I'm a Freelance UI/UX Designer and Developer based <br>in Bahawalpur,
                    Pakistan.I strives to build immersive and <br>beautiful web applications
                    through carefully crafted code <br>and user-centric design.
                 </p>
-                <button class="px-4 py-2 text-white bg-primary rounded mt-5">Say Hello!</button>
-                <div class="card mx-auto flex flex-col lg:flex-row gap-1 mt-10 lg:mt-52">
-                    <div class="px-10 py-3 bg-secendary">
+                <div class="flex justify-center items-center lg:justify-start">
+                    <button class="px-4 py-2 flex justify-center items-center text-white bg-primary rounded mt-5">Say Hello!</button>
+                </div>
+                <div class="card mx-auto flex flex-col lg:flex-row gap-1 mt-10 lg:mt-32">
+                    <div class="px-6 py-3 bg-secendary">
                         <p class="text-3xl text-center">2 Y.</p>
                         <p class="text-base text-center lg:text-left text-Text-color">Experience</p>
                     </div>
-                    <div class="px-12 py-3 bg-secendary">
+                    <div class="px-5 py-3 bg-secendary">
                         <p class="text-3xl text-center">250+</p>
                         <p class="text-base text-center lg:text-left text-Text-color">Project Completed</p>
                     </div>
-                    <div class="px-10 py-3 bg-secendary">
+                    <div class="px-6 py-3 bg-secendary">
                         <p class="text-3xl text-center">58</p>
                         <p class="text-base text-center lg:text-left text-Text-color">Happy Client</p>
                     </div>
                 </div>
             </div>
-            <div class="lg:w-hero-i-w lg:h-hero-i-h md:w-2/4 hidden sm:block rounded-lg shadow-xl bg-white">
-                <img src="../Figma-05-img/hero-section.png" 
-                class="w-[700px] h-[600px] lg:w-hero-i-w lg:h-hero-i-h object-cover" alt="">
+            <div class="w-[450px] h-[530px] pt-1 bg-white hidden lg:block rounded-2xl shadow-lg">
+                <img src="./Figma-05-img/hero-section.png" 
+                class="w-full h-full object-cover hidden lg:block" alt="">
             </div>
         </div>
 
         <!-- Section-2 -->
 
-        <div class="mx-auto w-95% relative lg:absolute md:absolute lg:top-[500px] md:top-[700px] rounded-lg shadow-lg lg:mt-72 md:mt-72 mt-32 p-10
-            lg:p-24 md:p-24 flex justify-center items-center bg-white">
-            <div class="flex flex-col lg:flex-row md:flex-row justify-evenly items-center gap-8 lg:gap-36">
+        <div class="lg:w-11/12 py-16 lg:bg-white lg:rounded-md lg:shadow-lg mt-10 lg:mt-48 lg:absolute lg:top-[600px] lg:z-40">
+            <div class="flex flex-col lg:flex-row justify-evenly items-center">
                 <!-- img -->
-                <div class="">
-                    <img src="../Figma-05-img/hero-section.png" class="w-[424px] h-[400px] object-cover rounded-lg bg-[#F0F1F3]" alt="">
-                    <div class="contact w-[264px] h-[74px] absolute left-24 lg:left-32 md:left-32 bottom-[420px] lg:bottom-16 md:bottom-16 bg-white rounded shadow-lg 
+                <img src="./Figma-05-img/hero-section.png" class="w-[424px] h-[400px] object-cover rounded-lg bg-[#F0F1F3]" alt="">
+                <div class="hidden lg:block">
+                    <div class="contact w-[264px] h-[74px] absolute left-32 bottom-10 bg-white rounded shadow-lg 
                        flex justify-center items-center gap-8 text-primary">
                         <i class="fa-brands fa-facebook hover:px-2 
                         hover:transition-all hover:py-2 hover:rounded-md hover:bg-primary hover:text-white"></i>
@@ -120,7 +119,7 @@
                     </div>
                 </div>
                 <!-- Text -->
-                <div>
+                <div class="mt-10 lg:mt-0">
                     <p class="text-3xl text-center lg:text-left lg:text-4xl font-semibold">I am Professional User <br>Experience Designer</p>
                     <p class="text-base text-center lg:text-left text-Text-color mt-5">I design and develop services for customers <br>specializing
                         creating stylish, modern websites, web <br>services and online
@@ -142,56 +141,64 @@
 
     <!-- Working Seection -->
 
-    <section class="w-full lg:w-full md:w-full py-14 lg:h-wor-primary mx-auto bg-working flex flex-col justify-center items-center p-24">
-        <div class="working-sec flex flex-col lg:flex-row justify-evenly items-center">
-            <!-- Working Text -->
-            <div class="wor-text lg:w-1/3 flex flex-col justify-center  lg:ml-10 items-center lg:items-start">
-               <p class="text-5xl font-semibold text-center">Work Process</p>
-               <p class="text-base text-center lg:text-left p-5 lg:p-0 mt-5 text-Text-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                 Nulla purus arcu, varius eget velit non, laoreet imperdiet <br>orci.
-                  Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,
-               </p>
-               <p class="text-base text-center lg:text-left mt-4 text-Text-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                 Nulla purus arcu, varius eget velit non.
-               </p>
-            </div>
-            <!-- Working-Card -->
-            <div class="wor-card lg:w-2/4 flex flex-wrap justify-center items-center gap-4 lg:gap-0 md:gap-0 mt-10 lg:mt-0">
-                <div class="card-1 w-wor-primary h-wor-secendry bg-white 
-                   flex flex-col justify-center items-start p-5 rounded-lg shadow-md">
-                    <i class="fa-solid fa-calendar-days px-5 py-5 text-black hover:text-white rounded bg-secendary hover:bg-primary"></i>
-                    <p class="text-xl font-semibold mt-4">1. Research</p>
-                    <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
-                       consectetur adipiscing elit. <br>
-                       Nulla purus arcu.
-                    </p>
+    <section class="bg-white">
+        <div class="container py-32">
+            <div class=" flex flex-col lg:flex-row justify-between items-center">
+                <!-- Working Text -->
+                <div class="wor-text lg:w-1/3 flex flex-col">
+                   <p class="text-5xl font-semibold text-center lg:text-left">Work Process</p>
+                   <p class="text-base text-center lg:text-left p-5 lg:p-0 mt-5 text-Text-color">Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit.
+                     Nulla purus arcu, varius eget velit non, laoreet imperdiet orci.
+                      Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,
+                   </p>
+                   <p class="text-base text-center lg:text-left mt-4 text-Text-color">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit.
+                     Nulla purus arcu, varius eget velit non.
+                   </p>
                 </div>
-                <div class="card-2 w-wor-primary h-wor-secendry bg-white flex flex-col justify-center
-                     lg:mt-8 md:mt-8 items-start lg:ml-4 md:ml-4 p-5 rounded-lg shadow-md">
-                    <i class="fa-solid fa-chart-line px-5 py-5 text-black hover:text-white rounded bg-secendary hover:bg-primary"></i>
-                    <p class="text-xl font-semibold mt-4">2. Analyze</p>
-                    <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
-                       consectetur adipiscing elit. <br>
-                       Nulla purus arcu.
-                    </p>
-                </div>
-                <div class="card-3 w-wor-primary h-wor-secendry  bg-white flex flex-col justify-center 
-                    md:mb-8 lg:mb-8 items-start p-5 rounded-lg shadow-md">
-                    <i class="fa-solid fa-pen px-5 py-5 text-black hover:text-white rounded bg-secendary hover:bg-primary"></i>
-                    <p class="text-xl font-semibold mt-4">3. Design</p>
-                    <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
-                       consectetur adipiscing elit. <br>
-                       Nulla purus arcu.
-                    </p>
-                </div>
-                <div class="card-4 w-wor-primary h-wor-secendry bg-white flex flex-col justify-center items-start 
-                    lg:ml-4 md:ml-4 p-5 rounded-lg shadow-md">
-                    <i class="fa-solid fa-laptop px-5 py-5 text-black hover:text-white rounded bg-secendary hover:bg-primary"></i>
-                    <p class="text-xl font-semibold mt-4">4. Launch</p>
-                    <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
-                       consectetur adipiscing elit. <br>
-                       Nulla purus arcu.
-                    </p>
+                <!-- Working-Card -->
+                <div class="wor-card lg:w-1/2 grid md:grid-cols-2  gap-5 mt-10">
+                    <div class="card-1 px-5 py-5 bg-white
+                       flex flex-col justify-center items-start rounded-lg shadow-md">
+                        <i class="fa-solid fa-calendar-days px-4 py-4 text-primary text-3xl
+                         hover:text-white rounded bg-secendary hover:bg-primary"></i>
+                        <p class="text-xl font-semibold mt-4">1. Research</p>
+                        <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
+                           consectetur adipiscing elit. <br>
+                           Nulla purus arcu.
+                        </p>
+                    </div>
+                    <div class="card-1 px-5 py-5 bg-white 
+                       flex flex-col justify-center items-start rounded-lg shadow-md">
+                        <i class="fa-solid fa-chart-line
+                         px-4 py-4 text-primary text-3xl
+                         hover:text-white rounded bg-secendary hover:bg-primary"></i>
+                        <p class="text-xl font-semibold mt-4">1. Research</p>
+                        <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
+                           consectetur adipiscing elit. <br>
+                           Nulla purus arcu.
+                        </p>
+                    </div>
+                    <div class="card-3 px-5 py-5 bg-white
+                       flex flex-col justify-center items-start rounded-lg shadow-md">
+                        <i class="fa-solid fa-pen px-4 py-4 text-primary text-3xl
+                         hover:text-white rounded bg-secendary hover:bg-primary"></i>
+                        <p class="text-xl font-semibold mt-4">1. Research</p>
+                        <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
+                           consectetur adipiscing elit. <br>
+                           Nulla purus arcu.
+                        </p>
+                    </div>
+                    <div class="card-1 px-5 py-5 bg-white 
+                       flex flex-col justify-center items-start rounded-lg shadow-md">
+                        <i class="fa-solid fa-laptop px-4 py-4 text-primary text-3xl
+                         hover:text-white rounded bg-secendary hover:bg-primary"></i>
+                        <p class="text-xl font-semibold mt-4">1. Research</p>
+                        <p class="text-base text-Text-color mt-2">Lorem ipsum dolor sit amet,<br>
+                           consectetur adipiscing elit. <br>
+                           Nulla purus arcu.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -199,21 +206,21 @@
 
     <!-- Portfolio Section -->
 
-    <section class="mx-auto w-full lg:p-24 py-24">
+    <section class="py-24">
         <!-- Portfolio -->
-        <div class="portfolio-section">
+        <div class="container">
             <!-- Portfolio Text -->
-            <div class="port-text text-center">
+            <div class="port-text text-center mb-5">
                 <p class="text-5xl font-semibold">Portfolio</p>
-                <p class="text-base lg:text-lg text-Text-color mt-5 p-4">There are many variations of passages of Lorem <br>Ipsum available,
+                <p class="text-base lg:text-lg text-Text-color mb-3 p-4">There are many variations of passages of Lorem <br>Ipsum available,
                    but the majority have suffered alteration.
                 </p>
             </div>
             <!-- Portfolio Card -->
-            <div class="port-card mx-auto w-90% flex flex-col lg:flex-row md:flex-row flex-wrap justify-center items-center gap-5 md:mt-20 lg:mt-20">
+            <div class="flex flex-col md:flex-row lg:flex-row flex-wrap items-center justify-center mt-10 gap-5">
                 <!-- Card-1 -->
-                <div class="card-1 lg:w-por-30% md: h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Portfolio Image-1.jpg" 
+                <div class="card-1 lg:w-width-secendary md:h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
+                    <img src="./Figma-05-img/Portfolio Image-1.jpg" 
                     class="w-full rounded-t-md h-[248px]" alt="">
                     <div class="p-5">
                         <p class="text-xs mt-3 text-Text-color">UI-UX DESIGN</p>
@@ -229,8 +236,8 @@
                     </div>
                 </div>
 
-                <div class="card-1 lg:w-por-30% md: h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Portfolio Image-2.jpg" 
+                <div class="card-2 lg:w-width-secendary md: h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
+                    <img src="./Figma-05-img/Portfolio Image-2.jpg" 
                     class="w-full rounded-t-md h-[248px]" alt="">
                     <div class="p-5">
                         <p class="text-xs mt-3 text-Text-color">UI-UX DESIGN</p>
@@ -246,8 +253,8 @@
                     </div>
                 </div>
 
-                <div class="card-1 lg:w-por-30% md: h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Portfolio Image-3.jpg" 
+                <div class="card-3 lg:w-width-secendary md: h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
+                    <img src="./Figma-05-img/Portfolio Image-3.jpg" 
                     class="w-full rounded-t-md h-[248px]" alt="">
                     <div class="p-5">
                         <p class="text-xs mt-3 text-Text-color">UI-UX DESIGN</p>
@@ -263,8 +270,8 @@
                     </div>
                 </div>
 
-                <div class="card-1 lg:w-por-30% h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Portfolio Image-4.jpg" 
+                <div class="card-4 lg:w-width-secendary h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
+                    <img src="./Figma-05-img/Portfolio Image-4.jpg" 
                     class="w-full rounded-t-md h-[248px]" alt="">
                     <div class="p-5">
                         <p class="text-xs mt-3 text-Text-color">UI-UX DESIGN</p>
@@ -280,8 +287,8 @@
                     </div>
                 </div>
 
-                <div class="card-1 lg:w-por-30% h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Portfolio Image-5.jpg" 
+                <div class="card-1 lg:w-width-secendary h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
+                    <img src="./Figma-05-img/Portfolio Image-5.jpg" 
                     class="w-full rounded-t-md h-[248px]" alt="">
                     <div class="p-5">
                         <p class="text-xs mt-3 text-Text-color">UI-UX DESIGN</p>
@@ -297,8 +304,8 @@
                     </div>
                 </div>
 
-                <div class="card-1 lg:w-por-30%  h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Portfolio Image-6.jpg" 
+                <div class="card-1 lg:w-width-secendary  h-[476px] flex flex-col justify-start bg-white shadow-md rounded-md">
+                    <img src="./Figma-05-img/Portfolio Image-6.jpg" 
                     class="w-full rounded-t-md h-[248px] object-cover" alt="">
                     <div class="p-5">
                         <p class="text-xs mt-3 text-Text-color">UI-UX DESIGN</p>
@@ -319,78 +326,82 @@
 
     <!-- Project Section -->
     
-    <section class="max-w-full mx-auto h-project flex justify-center items-center p-8 lg:p-0 bg-foot1-color">
-        <div class="project-sec flex flex-col justify-center items-center">
-            <p class="text-3xl lg:text-5xl text-white font-semibold">Do you have Project Idia?<br>
-                Let's discuss your project
-            </p>
-            <p class="text-sm lg:text-lg text-Text-color text-center mt-5">There are many variations of passages of Lorem Ipsum <br>available,
-                but the majority have suffered alteration.
-            </p>
-            <button class="px-8 py-2 bg-primary text-white text-base mt-6" type="">Let’s work Together</button>
+    <section class="bg-foot1-color">
+        <div class="container py-14 flex justify-center items-center">
+            <div class="project-sec flex flex-col justify-center items-center">
+                <p class="text-3xl lg:text-5xl text-white font-semibold">Do you have Project Idia?<br>
+                    Let's discuss your project
+                </p>
+                <p class="text-sm lg:text-lg text-Text-color text-center mt-5">There are many variations of passages of Lorem Ipsum <br>available,
+                    but the majority have suffered alteration.
+                </p>
+                <button class="px-8 py-2 bg-primary text-white text-base mt-6" type="">Let’s work Together</button>
+            </div>
         </div>
     </section>
 
     <!-- Blog Section -->
 
-    <section class="mx-auto lg:p-24 py-24">
-        <div class="blog-section flex flex-col justify-center items-center">
-            <div class="port-text text-center">
-                <p class="text-5xl font-semibold">Blog</p>
-                <p class="text-base lg:text-lg text-Text-color mt-3">There are many variations of passages of Lorem Ipsum <br>available,
-                    but the majority have suffered alteration.
-                </p>
-            </div>
-            <div class="card-section mx-auto mt-10 flex flex-col lg:flex-row md:flex-row md:flex-wrap gap-6 justify-center items-center">
-                <!-- Card-1 -->
-                <div class="card-1 lg:w-1/5 md:w-2/5 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Blog-imge-1.jpg" 
-                    class="w-full rounded-t-md h-[248px] object-cover" alt="">
-                    <div class="p-5">
-                        <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
-                        <p class="text-xs text-black mt-2">Lorem ipsum dolor sit consea. <br>
-                             Nulla purus arcu.
-                        </p>   
+    <section class="bg-white">
+        <div class="container py-24">
+            <div class="blog-section flex flex-col justify-center items-center">
+                <div class="port-text text-center">
+                    <p class="text-5xl font-semibold">Blog</p>
+                    <p class="text-base lg:text-lg text-Text-color mt-3">There are many variations of passages of Lorem Ipsum <br>available,
+                        but the majority have suffered alteration.
+                    </p>
+                </div>
+                <div class=" flex flex-col lg:flex-row justify-center items-center gap-5 mt-10">
+                    <!-- Card-1 -->
+                    <div class="card-1 lg:w-1/4 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
+                        <img src="./Figma-05-img/Blog-imge-1.jpg" 
+                        class="w-full rounded-t-md h-[248px] object-cover" alt="">
+                        <div class="p-5">
+                            <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
+                            <p class="text-xs text-black mt-2">Lorem ipsum dolor sit consea. <br>
+                                 Nulla purus arcu.
+                            </p>   
+                        </div>
+                    </div>
+                    <!-- Card-2 -->
+                    <div class="card-1 w-full lg:w-1/4 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
+                        <img src="./Figma-05-img/Blog-imge-2.jpg" 
+                        class="w-full rounded-t-md h-[248px] object-cover" alt="">
+                        <div class="p-5">
+                            <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
+                            <p class="text-sm text-black mt-2">Lorem ipsum dolor sit consea. <br>
+                                 Nulla purus arcu.
+                            </p>   
+                        </div>
+                    </div>
+                    <!-- Card-1 -->
+                    <div class="card-1 lg:w-1/4 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
+                        <img src="./Figma-05-img/Blog-imge-3.jpg" 
+                        class="w-full rounded-t-md h-[248px] object-cover" alt="">
+                        <div class="p-5">
+                            <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
+                            <p class="text-sm text-black mt-2">Lorem ipsum dolor sit consea. <br>
+                                 Nulla purus arcu.
+                            </p>   
+                        </div>
+                    </div>
+                    <!-- Card-1 -->
+                    <div class="card-1 lg:w-1/4 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
+                        <img src="./Figma-05-img/Blog-imge-4.jpg" 
+                        class="w-full rounded-t-md h-[248px] object-cover" alt="">
+                        <div class="p-5">
+                            <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
+                            <p class="text-sm text-black mt-2">Lorem ipsum dolor sit consea. <br>
+                                 Nulla purus arcu.
+                            </p>   
+                        </div>
                     </div>
                 </div>
-                <!-- Card-1 -->
-                <div class="card-1 w-full lg:w-1/5 md:w-2/5 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Blog-imge-2.jpg" 
-                    class="w-full rounded-t-md h-[248px] object-cover" alt="">
-                    <div class="p-5">
-                        <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
-                        <p class="text-sm text-black mt-2">Lorem ipsum dolor sit consea. <br>
-                             Nulla purus arcu.
-                        </p>   
-                    </div>
+                <div class="flex justify-center items-center gap-3 mt-10">
+                   <div class="w-[30px] h-[8px] rounded-md bg-primary"></div>
+                   <div class="w-[8px] h-[8px] rounded-full bg-Text-color"></div>
+                   <div class="w-[8px] h-[8px] rounded-full bg-Text-color"></div>
                 </div>
-                <!-- Card-1 -->
-                <div class="card-1 lg:w-1/5 md:w-2/5 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Blog-imge-3.jpg" 
-                    class="w-full rounded-t-md h-[248px] object-cover" alt="">
-                    <div class="p-5">
-                        <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
-                        <p class="text-sm text-black mt-2">Lorem ipsum dolor sit consea. <br>
-                             Nulla purus arcu.
-                        </p>   
-                    </div>
-                </div>
-                <!-- Card-1 -->
-                <div class="card-1 lg:w-1/5 md:w-2/5 h-blog flex flex-col justify-start bg-white shadow-md rounded-md">
-                    <img src="../Figma-05-img/Blog-imge-4.jpg" 
-                    class="w-full rounded-t-md h-[248px] object-cover" alt="">
-                    <div class="p-5">
-                        <p class="text-xs text-Text-color">22 Oct, 2020/246 Comments</p>
-                        <p class="text-sm text-black mt-2">Lorem ipsum dolor sit consea. <br>
-                             Nulla purus arcu.
-                        </p>   
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center items-center gap-3 mt-10">
-               <div class="w-[30px] h-[8px] rounded-md bg-primary"></div>
-               <div class="w-[8px] h-[8px] rounded-full bg-Text-color"></div>
-               <div class="w-[8px] h-[8px] rounded-full bg-Text-color"></div>
             </div>
         </div>
     </section>
@@ -398,7 +409,7 @@
     <!-- Experience Section -->
 
     <section class="max-w-full mx-auto py-32 bg-white-light">
-        <div class="experience-sec flex flex-col lg:flex-row md:flex-row justify-center items-center gap-10 lg:gap-20">
+        <div class="experience-sec flex flex-col lg:flex-row  justify-center items-center gap-10 lg:gap-20">
             <div class="ex-text flex flex-col justify-center items-center lg:items-start md:items-start">
                 <p class="text-center lg:text-left md:text-left text-5xl font-semibold">What I do?</p>
                 <p class="text-Text-color text-sm lg:text-base p-8 lg:p-0 md:p-0 lg:mt-5 md:mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
@@ -451,24 +462,24 @@
             <p class="lg:text-lg text-Text-color mt-8 text-center">There are many variations of passages of Lorem Ipsum<br> available,
                 but the majority have suffered alteration.
             </p>
-            <img src="../Figma-05-img/client Sec.png"
+            <img src="./Figma-05-img/client Sec.png"
             class="lg:w-90% px-10" alt="">
         </div>
     </section>
 
     <!-- Testimonial Section -->
 
-    <section class="max-w-full mx-auto py-10 lg:py-24 bg-white-light">
-        <div class="client-sec flex flex-col justify-start items-center">
+    <section class="py-10 md:py-24 bg-white-light">
+        <div class="container flex flex-col justify-start items-center">
             <p class="text-5xl font-semibold">Testimonial</p>
             <p class="lg:text-lg text-Text-color mt-8 text-center">There are many variations of passages of Lorem Ipsum <br>available,
                 but the majority have suffered alteration.
             </p>
             <p class="text-sm mt-5 lg:mt-14 text-center">“Nulla efficitur nisl sit amet velit malesuada dapibus. Duis <br>
-                mollis felis turpis, nec semper odio convallis at. Curabitur imperdiet <br>semper arcu, 
-                a finibus arcu suscipit in. Donec quis placerat nibh. Maecenas est purus,
-                eleifend ac cursus sed, tincidunt ut <br>sapien. 
-                Morbi ornare elit at libero suscipit porta.”
+                mollis felis turpis, nec semper odio convallis at.Curabitur imperdiet semper arcu, 
+                a finibus arcu suscipit in. <br>Donec quis placerat nibh. Maecenas est purus,
+                eleifend ac cursus sed, tincidunt ut sapien. 
+                <br>Morbi ornare elit at libero suscipit porta.”
             </p>
             <p class="text-lg text-center mt-4">Esther Howard</p>
             <p class="text-base font-light">Managing Director, ABC company</p>
@@ -482,13 +493,14 @@
 
     <!-- Contact Us Section -->
     
-    <section class="max-w-full lg:h-[650px] md:h-[650px] lg:p-20 md:p-20 py-10 lg:py-0 md:py-0 
-        lg:relative md:relative mx-auto flex justify-center items-center bg-white-light">
-        <div class="contact-sec lg:flex-row md:flex-row lg:absolute md:absolute lg:top-1 md:top-28
-            flex flex-col justify-evenly items-center lg:w-4/5 md:w-90% lg:h-cont-h rounded-md shadow-md bg-white">
-            <div class="lg:w-2/4 md:w-2/3 px-20 md:px-10 lg:px-20 py-10 lg:py-0 md:py-0 flex flex-col justify-start items-start">
-                <p class="text-center lg:text-left md:text-left text-4xl font-semibold">Let’s discuss your Project</p>
-                <p class="text-Text-color mt-4 text-sm lg:text-base text-center md:text-left lg:text-left">There are many variations of passages of Lorem <br>Ipsu available. but the majority have suffered alte.</p>
+    <section class=" lg:h-[650px] lg:p-20 py-10 lg:py-0
+        lg:relative  mx-auto flex justify-center items-center bg-white-light">
+        <div class="contact-sec lg:flex-row lg:absolute lg:top-1
+            flex flex-col justify-evenly items-center lg:w-4/5 lg:h-cont-h rounded-md shadow-md bg-white">
+            <div class="lg:w-2/4 px-20 lg:px-20 py-10 lg:py-0 flex flex-col justify-center items-center lg:justify-start lg:items-start">
+                <p class="text-center lg:text-left text-4xl font-semibold">Let’s discuss your Project</p>
+                <p class="text-Text-color mt-4 text-sm lg:text-base text-center lg:text-left">There are many variations
+                     of passages of Lorem <br>Ipsu available. but the majority have suffered alte.</p>
                 <div class="flex flex-col mt-4 gap-4">
                     <div class="w-[360px] h-[96px] bg-white rounded-md shadow-md px-6 flex justify-start items-center gap-4">
                         <i class="fa-solid fa-location-dot px-4 py-4 text-lg text-white rounded-sm bg-primary"></i>
@@ -529,20 +541,24 @@
                 </div>
             </div>
 
-            <div class="w-2/4 md:1/4 md:mr-10 lg:mr-0 py-10 lg:py-0 mx-auto flex flex-col justify-center items-center lg:justify-start md:items-start lg:w-2/4 md:w-2/4">
-                <p class="text-Text-color text-sm lg:text-base md:text-sm text-center lg:text-left md:text-left">There are many variations of passages of Lorem Ipsu available,<br>
-                    but the majority have suffered alte.
-                </p>
-                <input class="w-[350px] lg:w-[546px] border-b-2 border-primary mt-10 pb-2" type="name" placeholder="Name*">
-                <input class="w-[350px] lg:w-[546px]  border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Gmail*">
-                <input class="w-[350px] lg:w-[546px]  border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Location*">
-                <div class="flex flex-col lg:flex-row lg:gap-12">
-                    <input class="w-[350px] lg:w-[250px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Budget*">
-                    <input class="w-[350px] lg:w-[250px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Subject*">
-                </div> 
-                <input class="w-[350px] lg:w-[546px] border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Massage*">
-                <div class="mt-5 lg:mt-14">
-                    <button class="px-6 py-2 text-white bg-primary rounded-sm">Submit <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="w-1/2 py-10 lg:py-0 mx-auto flex flex-col justify-center items-center">
+                
+                <div class="flex flex-col">
+                    <p class="text-Text-color text-sm lg:text-base text-center lg:text-left">
+                        There are many variations of passages of Lorem Ipsu available,<br>
+                        but the majority have suffered alte.
+                    </p>
+                    <input class=" border-b-2 border-primary mt-10 pb-2" type="name" placeholder="Name*">
+                    <input class="  border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Gmail*">
+                    <input class="  border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Location*">
+                    <div class="flex flex-col lg:flex-row lg:gap-12">
+                       <input class="border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Budget*">
+                       <input class="border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Subject*">
+                    </div> 
+                    <input class=" border-b-2 border-primary mt-5 pb-2" type="name" placeholder="Massage*">
+                    <div class="mt-5 lg:mt-14">
+                       <button class="px-6 py-2 text-white bg-primary rounded-sm">Submit <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -551,7 +567,7 @@
     <!-- Footer -->
 
     <footer class="max-w-full h-foot-h bg-footer flex justify-center items-center">
-        <div class="w-90% flex flex-col lg:flex-row justify-evenly items-center gap-8 lg:gap-12 lg:mt-32">
+        <div class="lg:w-90% flex flex-col lg:flex-row justify-evenly items-center gap-8 lg:gap-12 lg:mt-32">
             <div class="logo flex justify-center items-center gap-4">
                 <div class="size-14 text-xl text-white bg-primary rounded-full flex justify-center items-center">S</div>
                 <P class="text-3xl text-white">Created By Shajalal.</P>
